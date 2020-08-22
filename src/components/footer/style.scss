@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   transform: translateY(-40px);
+  pointer-events: none;
   .footer-01 {
     background-image: url("../../imgs/footer-01.png");
     min-height: 305px;

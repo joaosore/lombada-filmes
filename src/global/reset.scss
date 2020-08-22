@@ -55,11 +55,25 @@ body {
     align-items: flex-start;
     .box {
       padding: 15px;
+      max-width: 33.33%;
       p {
         margin-bottom: 0.7em;
       }
     }
   }
+}
+
+.alert {
+  margin-bottom: -21px;
+}
+
+.alert-success {
+  color: chartreuse;
+  font-weight: bold;
+}
+
+.loading {
+  display: none;
 }
 
 @media only screen and (max-width: 900px) {
