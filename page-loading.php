@@ -1,7 +1,7 @@
 <?php
 /**
  * 
- * Template Name: Loading
+ * Template Name: Página Em Breve!
  *
  * @package jd
  *
