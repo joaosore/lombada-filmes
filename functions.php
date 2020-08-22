@@ -666,7 +666,7 @@ function create_redes_post_types() {
             'publicly_queryable' => true,
             'exclude_from_search' => false,
             'menu_icon' => 'dashicons-feedback',
-            'rewrite' => array('slug' => 'trabalhos', 'with_front' => false),
+            'rewrite' => array('slug' => 'redes', 'with_front' => false),
         )
     );
   
