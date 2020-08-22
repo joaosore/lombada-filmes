@@ -2,7 +2,7 @@
   $ponto_preto = get_dados('ponto_preto');
 ?>
 
-<section class="banner">
+<section class="banner pontoreto">
   <div class="container">
     <img class="img-desktop" src="<?php echo $ponto_preto['banner_desktop']['url']; ?>" alt="">
     <img class="img-mobile" src="<?php echo $ponto_preto['banner_mobile']['url']; ?>" alt="">
