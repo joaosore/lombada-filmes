@@ -13,6 +13,8 @@ export default function init_header() {
   var $doc = $("html, body");
 
   $(document).on("click", "a", function () {
+    $(".container-menu-mobile").removeClass("open");
+
     var item = $.attr(this, "href").replace("#", ".");
     console.log(item);
     if (item !== ".") {
