@@ -1,0 +1,99 @@
+#baixe-o-aplicativo-2 {
+  width: 100%;
+  min-height: 348px;
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1140px;
+    width: 100%;
+    .box-texts {
+      max-width: 778px;
+      width: 100%;
+      .text-1 {
+        padding-top: 78px;
+        h1 {
+          font-family: Lato;
+          font-size: 0.875em;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 1px;
+          text-align: start;
+          color: #00a3a2;
+          margin: 0;
+        }
+      }
+      .text-2 {
+        padding: 24px 0px 82px 0px;
+        p {
+          max-width: 432px;
+          width: 100%;
+          font-family: Lato;
+          font-size: 2em;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          color: #131313;
+          margin: 0;
+        }
+      }
+    }
+    .baixar-app {
+      display: flex;
+      flex-direction: row;
+      .app-store {
+        padding-right: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #baixe-o-aplicativo-2 {
+    .box {
+      max-width: 850px;
+      padding: 0 30px;
+      .baixar-app {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 24px;
+        flex-direction: column;
+        .app-store {
+          padding-right: 0;
+          padding-bottom: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 777px) {
+  #baixe-o-aplicativo-2 {
+    .box {
+      flex-direction: column;
+      .box-texts {
+        .text-1 {
+          padding-top: 72px;
+        }
+        .text-2 {
+          padding-bottom: 48px;
+        }
+      }
+      .baixar-app {
+        .google-play {
+          padding-bottom: 73px;
+        }
+      }
+    }
+  }
+}

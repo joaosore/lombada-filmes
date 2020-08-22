@@ -1,0 +1,81 @@
+.introduction {
+  display: flex;
+  max-height: 100vh;
+  padding-top: 140px;
+  .banner {
+    max-width: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    .box-texto {
+      position: absolute;
+      max-width: 500px;
+      color: #fff;
+      font-family: "Brasilero 2018 Free";
+      background-image: url("../../imgs/fundo-texto.png");
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      min-height: 225px;
+      background-repeat: no-repeat;
+      font-size: 2.625em;
+    }
+  }
+  .arrow {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .introduction {
+    .arrow {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .introduction {
+    .banner {
+      .box-texto {
+        max-width: 415px;
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .introduction {
+    height: auto;
+    padding-top: 80px;
+    .banner {
+      max-width: 100%;
+      &:nth-child(2) {
+        display: none;
+      }
+      .box-texto {
+        max-width: 345px;
+        font-size: 2em;
+      }
+      img {
+        object-fit: cover;
+        height: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.redes-social {
+  max-width: 320px;
+  width: 100%;
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    li {
+      display: block;
+    }
+  }
+
+  .icon {
+    width: 27px;
+    height: 27px;
+    background-color: #4a4a4a;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+    transition: all 350ms ease-in-out;
+    &:hover {
+      background-color: #fff;
+    }
+  }
+
+  .vimeo {
+    -webkit-mask-image: url("../../imgs/vimeo.svg");
+    mask-image: url("../../imgs/vimeo.svg");
+  }
+
+  .facebook {
+    -webkit-mask-image: url("../../imgs/facebook.svg");
+    mask-image: url("../../imgs/facebook.svg");
+  }
+
+  .instagram {
+    -webkit-mask-image: url("../../imgs/instagram.svg");
+    mask-image: url("../../imgs/instagram.svg");
+  }
+
+  .linkedin {
+    -webkit-mask-image: url("../../imgs/linkedin.svg");
+    mask-image: url("../../imgs/linkedin.svg");
+  }
+
+  .twitter {
+    -webkit-mask-image: url("../../imgs/twitter.svg");
+    mask-image: url("../../imgs/twitter.svg");
+  }
+}
+
+@media only screen and (max-width: 991px) {
+}

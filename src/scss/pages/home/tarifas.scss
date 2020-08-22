@@ -1,0 +1,401 @@
+#tarifas {
+  background-color: #f7f7f7;
+  .box-container {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: auto;
+    .descricao {
+      padding-top: 133px;
+      padding-bottom: 72px;
+      h1 {
+        max-width: 421px;
+        width: 100%;
+        font-family: Lato;
+        font-size: 2em;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.4;
+        letter-spacing: normal;
+        text-align: center;
+        color: #131313;
+        text-transform: uppercase;
+        margin: auto;
+      }
+      p {
+        max-width: 464px;
+        opacity: 0.5;
+        font-family: Lato;
+        font-size: 1em;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+        color: #131313;
+        margin-top: 24px;
+      }
+    }
+    .table {
+      max-width: 1140px;
+      display: flex;
+      flex-direction: column;
+      .owl-item {
+        &:nth-child(1) {
+          .box-col {
+            min-width: 250px;
+          }
+        }
+      }
+      .box-col {
+        flex: 1;
+        &:first-child {
+          .box-line {
+            font-family: Lato;
+            font-size: 12px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 1px;
+            color: #131313;
+            text-align: left;
+            align-items: center;
+            justify-content: flex-start;
+          }
+        }
+        &.nomad {
+          .box-line {
+            background-color: #fff;
+            font-family: Lato;
+            font-size: 24px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 1px;
+            text-align: center;
+            color: #131313;
+            text-transform: uppercase;
+            &:nth-child(1) {
+              border-top: 4px solid #d7bc18;
+            }
+          }
+        }
+        .box-line {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          font-family: Lato;
+          font-size: 18px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 1.5px;
+          text-align: center;
+          color: #131313;
+
+          padding: 39px 0;
+          border-bottom: 1px solid #e7e7e7;
+          border-top: 1px solid #e7e7e7;
+          min-height: 100px;
+          max-height: 100px;
+          &:nth-child(1) {
+            border-top: none;
+          }
+          &:nth-child(5) {
+            border-bottom: none;
+          }
+          img {
+            width: auto;
+          }
+        }
+      }
+      .desktop {
+        display: flex;
+      }
+      .mobile {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        .nomad {
+          flex: 1;
+          max-width: 50%;
+          .box-line {
+            border-bottom: 0;
+            border-top: 0;
+          }
+        }
+        .owl-carousel-mobile {
+          flex: 1;
+          max-width: 50%;
+
+          .box-line {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: Lato;
+            font-size: 24px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 1px;
+            text-align: center;
+            color: #131313;
+            border-bottom: 0;
+            border-top: 0;
+            &:after {
+              content: "";
+            }
+            &:nth-child(1) {
+              border-top: 4px solid #a7a7a7;
+            }
+            span {
+              max-width: 100px;
+              margin: auto;
+              margin-top: 0;
+              margin-bottom: 8px;
+              font-family: Lato;
+              font-size: 12px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: 1px;
+              color: #a7a7a7;
+            }
+          }
+        }
+      }
+    }
+    .quero-ser-nomad {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      padding-top: 56px;
+      padding-bottom: 93px;
+      .box-button {
+        width: 280px;
+        height: 63px;
+        border-radius: 31.5px;
+        background-color: #d7bc18;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        &::before {
+          content: '';
+          background-image: url('./imgs/arrow.svg');
+          width: 14px;
+          height: 12px;
+          position: absolute;
+          left: 0;
+          transition: all 350ms ease-in-out;
+          opacity: 0;
+        }
+        &::after {
+          content: '';
+          background-image: url('./imgs/arrow.svg');
+          width: 14px;
+          height: 12px;
+          position: absolute;
+          right: 32px;
+          transition: all 350ms ease-in-out;
+          opacity: 1;
+        }
+        &:hover {
+          span {
+            margin-left: 64px;
+          }
+          &::before {
+            left: 32px;
+            opacity: 1;
+          }
+          &::after {
+            right: 0;
+            opacity: 0;
+          }
+        }
+        span {
+          width: 131px;
+          height: 15px;
+          font-family: Lato;
+          font-size: 0.75em;
+          font-weight: 900;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 1px;
+          color: #ffffff;
+          margin-left: 32px;
+          transition: all 350ms ease-in-out;
+        }
+      }
+    }
+  }
+
+  .owl-nav {
+    display: none;
+  }
+
+  .owl-dots {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  #tarifas {
+    .box-container {
+      .table {
+        .owl-item {
+          &:nth-child(1) {
+            .box-col {
+              min-width: auto;
+              .box-line {
+                justify-content: center;
+              }
+            }
+          }
+        }
+        .desktop {
+          display: none;
+        }
+        .mobile {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          max-width: 100%;
+          .nomad {
+            flex: 1;
+            max-width: 50%;
+            .box-line {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              span {
+                max-width: 100px;
+                margin: 0 auto 8px;
+                font-family: Lato;
+                font-size: 12px;
+                font-weight: 400;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: 1px;
+                color: #a7a7a7;
+                text-transform: initial;
+              }
+            }
+          }
+          .owl-carousel-mobile {
+            flex: 1;
+            max-width: 50%;
+          }
+        }
+
+      }
+      .quero-ser-nomad {
+        display: none;
+      }
+    }
+    .owl-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      padding-top: 31px;
+      padding-bottom: 48px;
+
+      &.disabled {
+        display: none;
+      }
+      
+      .owl-prev {
+        outline: none;
+        width: 48px;
+        height: 48px;
+        background-color: #d7bc18;
+        border-radius: 24px;
+        background-image: url("./imgs/arrow-carousel.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        color: transparent;
+        span {
+          display: none;
+        }
+      }
+      .owl-next {
+        width: 48px;
+        height: 48px;
+        background-color: #d7bc18;
+        border-radius: 24px;
+        background-image: url("./imgs/arrow-carousel.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: rotateZ(180deg);
+        color: transparent;
+        span {
+          display: none;
+        }
+      }
+    }
+
+    .owl-dots {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      max-width: 50px;
+      margin: auto;
+      top: -74px;
+      position: relative;
+
+      &.disabled {
+        display: none;
+      }
+      
+      .owl-dot {
+        width: 6px;
+        height: 6px;
+        background-color: #e7e7e7;
+        border-radius: 3px;
+        &.active {
+          background-color: #d7bc18;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 777px) {
+  #tarifas {
+    .box-container {
+      .descricao {
+        padding-top: 48px;
+        padding-bottom: 44px;
+        h1 {
+          max-width: 240px;
+        }
+        p {
+          width: 238px;
+          margin: auto;
+          font-size: 1.14em;
+          padding-top: 17px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.icones {
+  display: flex;
+  a {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #e7e7e7;
+    border-radius: 24px;
+    display: block;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:nth-last-child() {
+      margin-right: 0;
+    }
+    div {
+      width: 48px;
+      height: 48px;
+      background-color: #131313;
+      transition: all 350ms ease-in-out;
+      &:hover {
+        background-color: #d7bc18;
+      }
+    }
+    .youtube {
+      -webkit-mask: url("./imgs/redes-sociais-1.svg") no-repeat center;
+      mask: url("./imgs/redes-sociais-1.svg") no-repeat center;
+    }
+    .instagram {
+      -webkit-mask: url("./imgs/redes-sociais-2.svg") no-repeat center;
+      mask: url("./imgs/redes-sociais-2.svg") no-repeat center;
+    }
+    .twitter {
+      -webkit-mask: url("./imgs/redes-sociais-3.svg") no-repeat center;
+      mask: url("./imgs/redes-sociais-3.svg") no-repeat center;
+    }
+    .facebook {
+      -webkit-mask: url("./imgs/redes-sociais-4.svg") no-repeat center;
+      mask: url("./imgs/redes-sociais-4.svg") no-repeat center;
+    }
+    .linkedin {
+      -webkit-mask: url("./imgs/redes-sociais-5.svg") no-repeat center;
+      mask: url("./imgs/redes-sociais-5.svg") no-repeat center;
+    }
+  }
+}

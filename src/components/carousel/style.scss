@@ -1,0 +1,56 @@
+@import "~owl.carousel/dist/assets/owl.carousel.css";
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  .item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      &:hover {
+        .title {
+          background-color: rgba($color: #000000, $alpha: 0.5);
+          opacity: 1;
+        }
+      }
+    }
+    .title {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: all 350ms ease-in-out;
+      cursor: pointer;
+      color: #ffb800;
+      font-weight: 500;
+      position: absolute;
+      top: 0;
+    }
+  }
+  .owl-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    .owl-dot {
+      width: 6px;
+      height: 6px;
+      background-color: #333333;
+      margin: 10px;
+      border-radius: 3px;
+      transition: all 350ms ease-in-out;
+      &.active {
+        background-color: #ffb800;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+}

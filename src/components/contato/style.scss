@@ -1,0 +1,91 @@
+.contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../imgs/fundo-contato.png");
+  padding: 50px 15px;
+  .container {
+    align-items: flex-start;
+  }
+  .formulario {
+    min-width: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #434343;
+      opacity: 1; /* Firefox */
+    }
+
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #434343;
+    }
+
+    &::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #434343;
+    }
+    .box {
+      max-width: 400px;
+      width: 100%;
+    }
+    form {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      max-width: 400px;
+      position: relative;
+      margin-top: 50px;
+      input,
+      textarea {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #9a9a9a;
+        padding: 15px 15px 5px 0;
+        margin-bottom: 10px;
+        color: #fff;
+        resize: none;
+      }
+      textarea {
+        margin-right: 50px;
+      }
+      button {
+        background-color: transparent;
+        border: 0;
+        position: absolute;
+        bottom: -2px;
+        right: 0;
+        padding: 0 10px;
+      }
+    }
+  }
+  .midias {
+    min-width: 50%;
+    width: 100%;
+    .redes-social {
+      margin-top: 50px;
+      ul {
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .contato {
+    background-size: cover;
+    .container {
+      flex-direction: column;
+    }
+    .midias {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-top: 50px;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.video-play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    flex-direction: column;
+  }
+  div {
+    width: 100%;
+    iframe {
+      max-width: 100%;
+    }
+  }
+  .btn {
+    width: 28px;
+    height: 28px;
+    background-color: #4a4a4a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 14px;
+    &:before {
+      content: " ";
+      position: absolute;
+      width: 8px;
+      height: 9px;
+    }
+    &.play {
+      &:before {
+        background-image: url("../../imgs/play.svg");
+      }
+    }
+    &.pause {
+      &:before {
+        background-image: url("../../imgs/pause.svg");
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .video-play {
+    iframe {
+      height: auto;
+    }
+  }
+}

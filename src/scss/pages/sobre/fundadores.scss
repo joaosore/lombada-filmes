@@ -1,0 +1,196 @@
+#fundadores {
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 132px;
+    padding-bottom: 140px;
+    border-top: solid 1px #e7e7e7;
+    .box-header {
+      h1 {
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #d7bc18;
+        margin: 0;
+        padding-bottom: 40px;
+      }
+    }
+    .box-titulo {
+      padding-bottom: 65px;
+      h1 {
+        width: 519px;
+        font-family: Lato;
+        font-size: 40px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.4;
+        letter-spacing: normal;
+        text-align: center;
+        color: #131313;
+        margin: 0;
+      }
+    }
+    .box-fundadores {
+      max-width: 1070px;
+      width: 100%;
+      border: solid 1px #e7e7e7;
+      .fundador {
+        &.centro {
+          flex-direction: row-reverse;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        .box-imagem {
+          max-width: 50%;
+          width: 100%;
+          height: 535px;
+          background-size: cover;
+          background-position: center;
+          background-color: black;
+          &.inicio {
+            background-image: url(./imgs/fundador-1.jpg);
+          }
+          &.centro {
+            background-image: url(./imgs/fundador-2.jpg);
+          }
+          &.fim {
+            background-image: url(./imgs/fundador-3.jpg);
+          }
+        }
+        .box-texto {
+          max-width: 50%;
+          width: 100%;
+          height: 535px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .box-inside {
+            max-width: 80%;
+            width: 100%;
+            h1 {
+              font-family: Lato;
+              font-size: 12px;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              color: #d7bc18;
+              margin: 0;
+              padding-bottom: 8px;
+            }
+            h2 {
+              font-family: Lato;
+              font-size: 24px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.5;
+              letter-spacing: normal;
+              color: #131313;
+              margin: 0;
+              padding-bottom: 34px;
+            }
+            p {
+              max-width: 600px;
+              font-family: Lato;
+              font-size: 16px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.5;
+              letter-spacing: normal;
+              color: #a7a7a7;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #fundadores {
+    .box {
+      padding-top: 54px;
+      padding-bottom: 48px;
+      .box-header {
+        h1 {
+          padding-bottom: 22px;
+        }
+      }
+      .box-titulo {
+        padding-bottom: 48px;
+        h1 {
+          font-size: 1.71em;
+          width: 255px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #fundadores {
+    .box {
+      padding-top: 54px;
+      .box-header {
+        h1 {
+          padding-bottom: 22px;
+        }
+      }
+      .box-titulo {
+        padding-bottom: 48px;
+        h1 {
+          font-size: 1.71em;
+          width: 255px;
+        }
+      }
+      .box-fundadores {
+        border: none;
+        .fundador {
+          flex-direction: column;
+          &.centro {
+            flex-direction: column;
+          }
+          .box-imagem {
+            max-width: 100%;
+            height: 320px;
+            &.inicio {
+              background-image: url(./imgs/fundador-4.jpg);
+            }
+            &.centro {
+              background-image: url(./imgs/fundador-5.jpg);
+            }
+            &.fim {
+              background-image: url(./imgs/fundador-6.jpg);
+            }
+          }
+          .box-texto {
+            max-width: 100%;
+            height: 320px;
+            .box-inside {
+              h1 {
+                padding-bottom: 24px;
+              }
+              h2 {
+                padding-bottom: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

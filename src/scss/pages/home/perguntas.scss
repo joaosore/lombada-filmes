@@ -1,0 +1,321 @@
+#perguntas {
+  .perguntas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 132px 0;
+    .box-titulo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h1 {
+        font-family: Lato;
+        font-size: 2em;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+        color: #131313;
+        margin-bottom: 24px;
+      }
+      p {
+        max-width: 464px;
+        width: 100%;
+        font-family: Lato;
+        font-size: 1em;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+        color: #a7a7a7;
+        margin-bottom: 72px;
+      }
+    }
+    .box-accordion {
+      display: flex;
+      flex-direction: row;
+      max-width: 1140px;
+      width: 100%;
+      padding-bottom: 75px;
+      .box-1 {
+        flex: 1;
+        .box {
+          max-width: 519px;
+          width: 100%;
+          border-top: 1px solid rgba(19, 19, 19, .1);
+          &.active {
+            .title {
+              &:after {
+                background-image: url("./imgs/accordion-before.svg");
+                min-width: 13px;
+                min-height: 8px;
+              }
+              span {
+                font-family: Lato;
+                font-size: 14px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: 1px;
+                color: #131313;
+              }
+            }
+            .text {
+              max-width: 519px;
+              width: 100%;
+              max-height: 5000px;
+              background-color: #f7f7f7;
+            }
+          }
+          .title {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            padding-top: 26px;
+            padding-bottom: 24px;
+            transition: all 350ms ease-in-out;
+            &:after {
+              content: "";
+              background-image: url("./imgs/accordion-after.svg");
+              min-width: 13px;
+              min-height: 8px;
+              display: block;
+              transition: all 350ms ease-in-out;
+            }
+            span {
+              font-family: Lato;
+              font-size: 14px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: 1px;
+              color: #131313;
+            }
+          }
+          .text {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 350ms ease-in-out;
+            p {
+              font-family: Lato;
+              font-size: 1em;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.4;
+              letter-spacing: normal;
+              color: #a7a7a7;
+              margin: 24px 32px;
+            }
+          }
+        }
+      }
+      .box-2 {
+        flex: 1;
+        .box {
+          max-width: 519px;
+          width: 100%;
+          border-top: 1px solid rgba(19, 19, 19, .1);
+          &.active {
+            .title {
+              &:after {
+                background-image: url("./imgs/accordion-before.svg");
+                min-width: 13px;
+                min-height: 8px;
+              }
+              span {
+                font-family: Lato;
+                font-size: 14px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: 1px;
+                color: #131313;
+              }
+            }
+            .text {
+              max-width: 519px;
+              width: 100%;
+              max-height: 5000px;
+              background-color: #f7f7f7;
+            }
+          }
+          .title {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            padding-top: 26px;
+            padding-bottom: 24px;
+            transition: all 350ms ease-in-out;
+            &:after {
+              content: "";
+              background-image: url("./imgs/accordion-after.svg");
+              min-width: 13px;
+              min-height: 8px;
+              display: block;
+              transition: all 350ms ease-in-out;
+            }
+            span {
+              font-family: Lato;
+              font-size: 14px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: 1px;
+              color: #131313;
+            }
+          }
+          .text {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 350ms ease-in-out;
+            p {
+              font-family: Lato;
+              font-size: 1em;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.4;
+              letter-spacing: normal;
+              color: #a7a7a7;
+              margin: 24px 32px;
+            }
+          }
+        }
+      }
+    }
+    .quero-ser-nomad {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      .box-button {
+        width: 280px;
+        height: 63px;
+        border-radius: 31.5px;
+        background-color: #d7bc18;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        &::before {
+          content: '';
+          background-image: url('./imgs/arrow.svg');
+          width: 14px;
+          height: 12px;
+          position: absolute;
+          left: 0;
+          transition: all 350ms ease-in-out;
+          opacity: 0;
+        }
+        &::after {
+          content: '';
+          background-image: url('./imgs/arrow.svg');
+          width: 14px;
+          height: 12px;
+          position: absolute;
+          right: 32px;
+          transition: all 350ms ease-in-out;
+          opacity: 1;
+        }
+        &:hover {
+          span {
+            margin-left: 64px;
+          }
+          &::before {
+            left: 32px;
+            opacity: 1;
+          }
+          &::after {
+            right: 0;
+            opacity: 0;
+          }
+        }
+        span {
+          width: 131px;
+          height: 15px;
+          font-family: Lato;
+          font-size: 0.75em;
+          font-weight: 900;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 1px;
+          color: #ffffff;
+          margin-left: 32px;
+          transition: all 350ms ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #perguntas {
+    .perguntas {
+      .box-accordion {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 777px) {
+  #perguntas {
+    .perguntas {
+      padding: 48px 0 46px 0;
+      .box-titulo {
+        h1 {
+          width: 213px;
+          margin-bottom: 17px;
+        }
+        p {
+          width: 238px;
+          font-size: 1.14em;
+          margin-bottom: 40px;
+        }
+      }
+      .box-accordion {
+          padding-bottom: 0;
+        .box-1 {
+          .box {
+            border: none;
+            .title {
+              max-width: 256px;
+              margin: auto;
+              border-top: 1px solid #a7a7a7;
+            }
+          }
+        }
+        .box-2 {
+          .box {
+            border: none;
+            .title {
+              max-width: 256px;
+              margin: auto;
+              border-top: 1px solid #a7a7a7;
+            }
+          }
+        }
+      }
+      .quero-ser-nomad {
+        display: none;
+      }
+    }
+  }
+}

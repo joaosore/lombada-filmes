@@ -1,0 +1,77 @@
+#sobre {
+  .sobre {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 234px;
+    h1 {
+      max-width: 202px;
+      width: 100%;
+      font-family: Lato;
+      font-size: 0.875em;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 1px;
+      color: #d7bc18;
+      margin: 0;
+      margin-bottom: 40px;
+    }
+    h2 {
+      max-width: 519px;
+      width: 100%;
+      font-family: Lato;
+      font-size: 2.5em;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.4;
+      letter-spacing: normal;
+      text-align: center;
+      color: #131313;
+      margin: 0;
+    }
+    p {
+      max-width: 600px;
+      width: 100%;
+      opacity: 0.5;
+      font-family: Lato;
+      font-size: 1em;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.69;
+      letter-spacing: normal;
+      color: #131313;
+      margin: 0;
+      padding-top: 72px;
+      padding-bottom: 132px;
+    }
+    hr {
+      height: 1px;
+      background-color: #e7e7e7;
+    }
+  }
+}
+
+@media screen and (max-width: 777px) {
+  #sobre {
+    .sobre {
+      padding-top: 131px;
+      padding-left: 30px;
+      padding-right: 30px;
+      h1 {
+        margin-bottom: 16px;
+      }
+      h2 {
+        font-size: 1.72em;
+      }
+      p {
+        padding-top: 48px;
+        padding-bottom: 48px;
+      }
+    }
+  }
+}
