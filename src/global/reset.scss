@@ -83,6 +83,12 @@ body {
 
   .pdg-header {
     padding-top: 90px;
+    .container {
+      flex-direction: column;
+      .box {
+        max-width: 100%;
+      }
+    }
   }
 
   .img-desktop {
