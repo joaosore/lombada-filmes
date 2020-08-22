@@ -527,8 +527,8 @@ function filter_post_contato() {
 function send_mail_wp($form)
 {
 
-	// $to = 'jaumcj@gmail.com';
-	$to = 'joao.marcos@medway.com.br';
+	$to = 'jaumcj@gmail.com';
+	// $to = 'joao.marcos@medway.com.br';
 	$subject = 'Contato Site - ('. $form['nome'] .')';
 
 	$headers = array(
@@ -550,7 +550,7 @@ function send_mail_wp($form)
 							$body .= '<td width="45"></td>';
 							$body .= '<td width="640">';
 								$actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://{$_SERVER['HTTP_HOST']}";
-								$body .= '<img src="' . $actual_link . '/wp-content/uploads/sites/5/2019/08/Screen-Shot-2019-08-05-at-11.10.53.png" width="200" >';
+								// $body .= '<img src="' . $actual_link . '/wp-content/uploads/sites/5/2019/08/Screen-Shot-2019-08-05-at-11.10.53.png" width="200" >';
 							$body .= '</td>';
 							$body .= '<td width="45"></td>';
 						$body .= '</tr>';
