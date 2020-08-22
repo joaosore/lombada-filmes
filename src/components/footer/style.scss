@@ -32,4 +32,9 @@ footer {
 }
 
 @media only screen and (max-width: 991px) {
+  .box-footer {
+    .footer-02 {
+      background-repeat: no-repeat;
+    }
+  }
 }
