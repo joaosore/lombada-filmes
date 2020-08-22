@@ -622,4 +622,87 @@ function send_mail_wp($form)
 	wp_mail( $to, $subject, $body, $headers, null );
 }
 
+function get_trabalhos($remove = null) {
+
+    $arr = array(
+        'post_type' => 'trabalhos',
+        'post_status' => 'publish',
+        'posts_per_page' => -1,
+        'order' => 'ASC',
+    );
+
+    $query = new WP_Query($arr);
+
+    $dados = [];
+    while ($query->have_posts()) {
+        $query->the_post();
+        $post_id = get_the_ID();
+
+        $trabalhos = get_dados('trabalhos', $post_id);
+
+        if($remove !== $post_id) {
+            $dados[] = array(
+                'titulo_simplificado' => $trabalhos['titulo_simplificado'],
+                'thumb' => $trabalhos['thumb'],
+                'link' => get_permalink($post_id),
+            );
+        }
+    }
+
+    return $dados;
+}
+
+//Cria o Menu Academia Medway
+function create_redes_post_types() {
+    register_post_type( 'redes',
+        array(
+            'labels' => array(
+                'name' => __( 'Redes Sociais' ),
+                'singular_name' => __( 'Redes Sociais' )
+            ),
+            'public' => true,
+            'hierarchical' => true,
+            'show_ui' => true,
+            'publicly_queryable' => true,
+            'exclude_from_search' => false,
+            'menu_icon' => 'dashicons-feedback',
+            'rewrite' => array('slug' => 'trabalhos', 'with_front' => false),
+        )
+    );
+  
+  }
+  add_action( 'init', 'create_redes_post_types' );
+
+  function clean($string) {
+    $string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens.
+ 
+    return preg_replace('/[^A-Za-z0-9\-]/', '', $string); // Removes special chars.
+ }
+
+  function get_redes() {
+
+    $arr = array(
+        'post_type' => 'redes',
+        'post_status' => 'publish',
+        'posts_per_page' => -1,
+        'order' => 'ASC',
+    );
+
+    $query = new WP_Query($arr);
+
+    $dados = [];
+    while ($query->have_posts()) {
+        $query->the_post();
+        $post_id = get_the_ID();
+
+        $redes_sociais = get_dados('redes_sociais', $post_id);
+        $dados[] = array(
+            'titulo' => get_the_title($post_id),
+            'lower_titulo' => clean(strtolower(get_the_title($post_id))),
+            'url' => $redes_sociais['url'],
+        );
+    }
+
+    return $dados;
+}
 ?>

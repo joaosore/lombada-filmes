@@ -1,30 +1,11 @@
 <section class="redes-social">
   <ul>
-    <li>
-      <a href="#">
-        <div class="icon vimeo"></div>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <div class="icon facebook"></div>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <div class="icon instagram"></div>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <div class="icon linkedin"></div>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <div class="icon twitter"></div>
-      </a>
-    </li>
-    
+    <?php foreach(get_redes() as $item) { ?>
+      <li>
+        <a href="<?php echo $item['url']; ?>" alt="<?php echo $item['titulo'] ?>" >
+          <div class="icon <?php echo $item['lower_titulo'] ?>"></div>
+        </a>
+      </li>
+    <?php } ?>
   </ul>
 </section>

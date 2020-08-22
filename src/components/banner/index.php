@@ -1,23 +1,17 @@
 <?php 
-
-  $data = array(
-    'href' => '#',
-    'target' => '_blank',
-    'title' => 'Conheça'
-  );
-
+  $ponto_preto = get_dados('ponto_preto');
 ?>
 
 <section class="banner">
   <div class="container">
-    <img class="img-desktop" src="<?php echo get_template_directory_uri(); ?>/dist/imgs/banner-desktop.jpg" alt="">
-    <img class="img-mobile" src="<?php echo get_template_directory_uri(); ?>/dist/imgs/banner-mobile.jpg" alt="">
+    <img class="img-desktop" src="<?php echo $ponto_preto['banner_desktop']['url']; ?>" alt="">
+    <img class="img-mobile" src="<?php echo $ponto_preto['banner_mobile']['url']; ?>" alt="">
     <div class="box-dados">
-      <img src="<?php echo get_template_directory_uri(); ?>/dist/imgs/logo-ponto-preto.png" alt="">
-      <p>Diversidade e visibilidade no audiovisual</p>
+      <img src="<?php echo $ponto_preto['logo']['url']; ?>" alt="">
+      <?php echo $ponto_preto['descricao']; ?>
       <?php 
         echo jd_component('button', array(
-          'data' => $data
+          'data' => $ponto_preto['botao']
         ));
       ?>
     </div>

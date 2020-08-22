@@ -1,8 +1,13 @@
+<?php 
+ $inicial = get_dados('inicial')
+?>
 <section class="introduction">
   <div class="banner">
     <img src="<?php echo get_template_directory_uri(); ?>/dist/imgs/banner-parte-1.jpg" alt="">
     <div class="box-texto">
-      <p>somos uma produtora audiovisual, voltada para o mercado independente.</p>
+      <?php 
+        echo $inicial['frase_de_impacto'];
+      ?>
     </div>
   </div>
   <div class="banner">
