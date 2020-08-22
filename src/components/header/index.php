@@ -3,13 +3,13 @@
     <div class="menu">
       <ul>
         <li>
-          <a href="#sobre-nos">SOBRE NÓS</a>
+          <a href="/#sobre-nos">SOBRE NÓS</a>
         </li>
         <li>
-          <a href="#box-player">REPERTÓRIO</a>
+          <a href="/#carousel">REPERTÓRIO</a>
         </li>
         <li>
-          <a href="#pontoreto">PONTORETO PODCAST</a>
+          <a href="/#pontoreto">PONTORETO PODCAST</a>
         </li>
         <li class="menu-mobile">
           <div class="img-menu-mobile"></div>
@@ -29,7 +29,7 @@
     <div class="menu menu-aling-right">
       <ul>
         <li>
-          <a href="#contato">CONTATO</a>
+          <a href="/#contato">CONTATO</a>
         </li>
         <!-- <li class="pesquisa">
           <a href="#">
@@ -46,20 +46,20 @@
     <div class="menu">
       <ul>
         <li class="active">
-          <a href="#sobre-nos">SOBRE NÓS</a>
+          <a href="/#sobre-nos">SOBRE NÓS</a>
         </li>
         <li>
-          <a href="#box-player">REPERTÓRIO</a>
+          <a href="/#carousel">REPERTÓRIO</a>
         </li>
         <li>
-          <a href="#pontoreto">PONTORETO PODCAST</a>
+          <a href="/#pontoreto">PONTORETO PODCAST</a>
         </li>
       </ul>
     </div>
     <div class="menu">
       <ul>
         <li>
-          <a href="#contato">CONTATO</a>
+          <a href="/#contato">CONTATO</a>
         </li>
       </ul>
     </div>

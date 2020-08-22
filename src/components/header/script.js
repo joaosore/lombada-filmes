@@ -15,8 +15,19 @@ export default function init_header() {
   $(document).on("click", "a", function () {
     $(".container-menu-mobile").removeClass("open");
 
-    var item = $.attr(this, "href").replace("#", ".");
+    if ($.attr(this, "href").charAt(0) === "/") {
+      if ($("body").hasClass("home")) {
+        var ancora = $.attr(this, "href").replace("/", "");
+        var item = ancora.replace("#", ".");
+      }
+    } else {
+      if ($.attr(this, "href").charAt(0) !== "/") {
+        var item = $.attr(this, "href").replace("#", ".");
+      }
+    }
+
     console.log(item);
+
     if (item !== ".") {
       if ($("body").find(item).length > 0) {
         $doc.animate(
