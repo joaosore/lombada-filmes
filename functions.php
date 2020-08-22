@@ -527,7 +527,7 @@ function filter_post_contato() {
 function send_mail_wp($form)
 {
 
-	$to = 'jaumcj@gmail.com';
+	$to = 'contato@lombadafilmes.com.br';
 	// $to = 'joao.marcos@medway.com.br';
 	$subject = 'Contato Site - ('. $form['nome'] .')';
 
