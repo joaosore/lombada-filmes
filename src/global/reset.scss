@@ -54,6 +54,7 @@ body {
   .container {
     align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: space-between;
     .box {
       padding: 15px;
       max-width: 33.33%;
