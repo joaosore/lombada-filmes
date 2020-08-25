@@ -622,7 +622,7 @@ function send_mail_wp($form)
 	wp_mail( $to, $subject, $body, $headers, null );
 }
 
-function get_trabalhos($remove = null) {
+function get_trabalhos($remove = null, $limit = null) {
 
     $arr = array(
         'post_type' => 'trabalhos',
@@ -640,12 +640,18 @@ function get_trabalhos($remove = null) {
 
         $trabalhos = get_dados('trabalhos', $post_id);
 
+        $soma = 0;
         if($remove !== $post_id) {
             $dados[] = array(
                 'titulo_simplificado' => $trabalhos['titulo_simplificado'],
                 'thumb' => $trabalhos['thumb'],
                 'link' => get_permalink($post_id),
             );
+            if($limit === $soma) {
+                return $dados;
+            }
+            $soma = $soma + 1;
+            
         }
     }
 

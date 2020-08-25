@@ -45,6 +45,26 @@ get_header();
             echo $data->descricao_bloco_3;
           ?>
         </div>
+        <div class="mais-producoes">
+          <hr>
+          <h3>mais produções</h3>
+          <section class="carousel">
+            <div class="container">
+              <div class="owl-carousel owl-theme">
+                <?php foreach(get_trabalhos(get_the_ID(), 3) as $item) { ?>
+                  <div class="item">
+                    <a href="<?php echo $item['link'] ?>">
+                      <img src="<?php echo $item['thumb']['url'] ?>" alt="">
+                      <div class="title">
+                        <span><?php echo $item['titulo_simplificado'] ?></span>
+                      </div>
+                    </a>
+                  </div>
+                <?php } ?>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
       <?php 
     }
