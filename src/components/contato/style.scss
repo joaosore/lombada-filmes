@@ -4,6 +4,9 @@
   justify-content: center;
   background-image: url("../../imgs/fundo-contato.png");
   padding: 50px 15px;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 400px;
   .container {
     align-items: flex-start;
   }
@@ -77,6 +80,7 @@
 @media only screen and (max-width: 991px) {
   .contato {
     background-size: cover;
+    padding-bottom: 200px;
     .container {
       flex-direction: column;
     }

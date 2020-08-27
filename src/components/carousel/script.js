@@ -10,7 +10,7 @@ async function init_carousel() {
       0: {
         items: 1,
       },
-      600: {
+      900: {
         items: 3,
       },
     },

@@ -70,9 +70,16 @@ get_header();
     }
   endwhile;
   ?>
-    </div>  
-  <?php 
- get_footer();
+    </div>
+    
+    <div class="footer-interna">
+      <?php 
+      jd_component('footer');
+      jd_component('redes-social');
+      ?>
+    </div>
+  <?php
+  get_footer();
 ?>
 
 
