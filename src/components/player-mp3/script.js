@@ -1,39 +1,54 @@
+console.log("Init MP3");
+
 var music = document.getElementById("music"); // id for audio element
-var duration = music.duration; // Duration of audio clip, calculated here for embedding purposes
-var pButton = document.getElementById("pButton"); // play button
-var playhead = document.getElementById("playhead"); // playhead
-var timeline = document.getElementById("timeline"); // timeline
 
-var tempoAtual = document.getElementById("tempo-atual");
-var tempoFinal = document.getElementById("tempo-final");
+if (music) {
+  var duration = music.duration; // Duration of audio clip, calculated here for embedding purposes
 
-// timeline width adjusted for playhead
-var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
+  var pButton = document.getElementById("pButton"); // play button
+  var playhead = document.getElementById("playhead"); // playhead
+  var timeline = document.getElementById("timeline"); // timeline
 
-// play button event listenter
-pButton.addEventListener("click", play);
+  var tempoAtual = document.getElementById("tempo-atual");
+  var tempoFinal = document.getElementById("tempo-final");
 
-// timeupdate event listener
-music.addEventListener("timeupdate", timeUpdate, false);
+  // timeline width adjusted for playhead
+  var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
 
-// makes timeline clickable
-timeline.addEventListener(
-  "click",
-  function (event) {
-    moveplayhead(event);
-    music.currentTime = duration * clickPercent(event);
-  },
-  false
-);
+  // play button event listenter
+  pButton.addEventListener("click", play);
+
+  // timeupdate event listener
+  music.addEventListener("timeupdate", timeUpdate, false);
+
+  // makes timeline clickable
+  timeline.addEventListener(
+    "click",
+    function (event) {
+      moveplayhead(event);
+      music.currentTime = duration * clickPercent(event);
+    },
+    false
+  );
+
+  // makes playhead draggable
+  playhead.addEventListener("mousedown", mouseDown, false);
+  window.addEventListener("mouseup", mouseUp, false);
+
+  // Gets audio file duration
+  music.addEventListener(
+    "canplaythrough",
+    function () {
+      duration = music.duration;
+    },
+    false
+  );
+}
 
 // returns click as decimal (.77) of the total timelineWidth
 function clickPercent(event) {
   return (event.clientX - getPosition(timeline)) / timelineWidth;
 }
-
-// makes playhead draggable
-playhead.addEventListener("mousedown", mouseDown, false);
-window.addEventListener("mouseup", mouseUp, false);
 
 // Boolean value so that audio position is updated only when the playhead is released
 var onplayhead = false;
@@ -109,15 +124,6 @@ function play() {
     pButton.className = "play";
   }
 }
-
-// Gets audio file duration
-music.addEventListener(
-  "canplaythrough",
-  function () {
-    duration = music.duration;
-  },
-  false
-);
 
 // getPosition
 // Returns elements left position relative to top-left of viewport

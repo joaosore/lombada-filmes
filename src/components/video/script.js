@@ -15,8 +15,9 @@ async function init_video() {
     responsivo: true,
   };
 
-  const player = "";
+  var player = "";
   var myEle = document.getElementById("made-in-ny");
+
   if (myEle) {
     player = new Player("made-in-ny", options);
   }
