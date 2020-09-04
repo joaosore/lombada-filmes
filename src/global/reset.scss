@@ -95,6 +95,297 @@ body {
   display: none;
 }
 
+.pontopreto-interna-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 140px);
+  width: 100%;
+  flex-wrap: wrap;
+  .box {
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .dados {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      width: 100%;
+      h4 {
+        font-weight: 700;
+        color: #000;
+        font-size: 1.4em;
+      }
+      img {
+        margin-bottom: 10px;
+      }
+      .rank {
+        color: #fff;
+        font-size: 2.375em;
+        font-weight: bold;
+      }
+      .autor {
+        margin-bottom: 25px;
+        .titulo {
+          letter-spacing: 4px;
+        }
+        h3 {
+          font-size: 2em;
+        }
+      }
+    }
+  }
+
+  .player {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .btn {
+      width: 28px;
+      height: 28px;
+      background-color: #4a4a4a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-radius: 14px;
+      &:before {
+        content: " ";
+        position: absolute;
+        width: 8px;
+        height: 9px;
+      }
+      &.play {
+        &:before {
+          background-image: url("../imgs/play.svg");
+        }
+      }
+      &.pause {
+        &:before {
+          background-image: url("");
+        }
+      }
+    }
+    #timeline {
+      width: 400px;
+      height: 20px;
+      background: #4200f7;
+      margin-top: 20px;
+      float: left;
+      border-radius: 15px;
+    }
+
+    #playhead {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      margin-top: 1px;
+      background: rgba(0, 255, 196, 0.82);
+    }
+    #audioplayer {
+      max-width: 1140px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btimeline {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      #timeline {
+        width: 100%;
+        margin: 0;
+        background: #1a1a1a;
+        height: 10px;
+        border-radius: 0;
+        #playhead {
+          margin: 0;
+          border: 0;
+          border-radius: 0;
+          background: #fdcc36;
+          width: 0;
+          height: 10px;
+        }
+      }
+      #pButton {
+        background-color: #1a1a1a;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+        background-size: 15px;
+        min-width: 55px;
+        min-height: 55px;
+        margin-right: 10px;
+      }
+    }
+    #tempo {
+      display: flex;
+      width: 100%;
+      padding-left: 65px;
+      justify-content: space-between;
+      font-weight: 700;
+      margin-top: -20px;
+      pointer-events: none;
+    }
+    #music {
+      display: none;
+    }
+  }
+
+  #pButton {
+    height: 60px;
+    width: 60px;
+    border: none;
+    background-size: 50% 50%;
+    background-position: center;
+  }
+  .play {
+    background: url("../imgs/play.svg") no-repeat;
+  }
+  .pause {
+    background: url("../imgs/pause.svg") no-repeat;
+  }
+  #timeline {
+    width: 400px;
+    height: 20px;
+    background: #4200f7;
+    margin-top: 20px;
+    float: left;
+    border-radius: 15px;
+  }
+
+  #playhead {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-top: 1px;
+    background: rgba(0, 255, 196, 0.82);
+  }
+}
+
+.pontopreto-interna-conteudo {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    max-width: 1250px;
+  }
+  .conteudo {
+    max-width: 1140px;
+    padding: 50px 15px;
+    background-color: #fff;
+    color: #000;
+    p {
+      font-family: "Cardo";
+      line-height: 35px;
+    }
+  }
+  .compartilhar {
+    max-width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: calc(21.44px + 50px);
+    p {
+      color: #000;
+      font-size: 0.6em;
+      margin-bottom: 10px;
+    }
+    .heateor_sss_sharing_ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .heateorSssSharingRound {
+        margin: 0 0 15px 0 !important;
+      }
+    }
+  }
+}
+
+.pontopreto-continue-escutando {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    hr {
+      width: 100%;
+    }
+    h3 {
+      color: #000;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      font-weight: 200;
+      font-size: 1.43em;
+    }
+  }
+  .titile {
+    width: 100%;
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:before {
+        content: "";
+        transition: all 350ms ease-in-out;
+      }
+      .title {
+        position: absolute;
+        opacity: 0;
+        z-index: 1;
+        color: #ffb800;
+        transition: all 350ms ease-in-out;
+      }
+      &:hover {
+        &:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: rgba($color: #0b0b0b, $alpha: 0.5);
+        }
+        .title {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.footer-interna-pontopreto {
+  .box-footer {
+    margin-top: -165px;
+  }
+  .redes-social {
+    margin-left: auto;
+    padding-top: 30px;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   body {
     font-size: 14px;
@@ -116,5 +407,45 @@ body {
 
   .img-mobile {
     display: flex;
+  }
+
+  .pontopreto-interna-banner {
+    flex-wrap: wrap;
+    padding: 15px;
+    background-position: bottom;
+    .box {
+      max-width: 100%;
+    }
+  }
+
+  .pontopreto-interna-conteudo {
+    .compartilhar {
+      max-width: 100%;
+      width: 100%;
+      padding: 0;
+      .heateor_sss_sharing_ul {
+        flex-direction: row;
+      }
+    }
+  }
+
+  .pontopreto-continue-escutando {
+    .container {
+      .titile {
+        h3 {
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+      }
+      .item {
+        padding: 15px;
+      }
+    }
+  }
+
+  .footer-interna-pontopreto {
+    .box-footer {
+      margin-top: -37px;
+    }
   }
 }

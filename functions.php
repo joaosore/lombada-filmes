@@ -101,11 +101,19 @@ function html5blank_header_scripts()
         wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('html5blankscripts'); // Enqueue it!
         
-        wp_register_script('johnnydev', get_template_directory_uri() . '/dist/main.js', array('jquery'), '1.0.0'); // Conditional script(s)
-        wp_enqueue_script('johnnydev'); // Enqueue it!
+        
 
     }
 }
+
+function add_this_script_footer(){
+    
+    wp_register_script('johnnydev', get_template_directory_uri() . '/dist/main.js', array('jquery'), '1.0.0'); // Conditional script(s)
+    wp_enqueue_script('johnnydev'); // Enqueue it!
+
+}
+add_action('wp_footer', 'add_this_script_footer');
+
 
 // Load HTML5 Blank conditional scripts
 function html5blank_conditional_scripts()
@@ -711,4 +719,66 @@ function create_redes_post_types() {
 
     return $dados;
 }
+
+
+//Cria o Menu Academia Medway
+function create_pontopreto_podcast_post_types() {
+    register_post_type( 'pontopreto',
+        array(
+            'labels' => array(
+                'name' => __( 'Ponto Preto' ),
+                'singular_name' => __( 'Ponto Preto' )
+            ),
+            'public' => true,
+            'hierarchical' => true,
+            'show_ui' => true,
+            'publicly_queryable' => true,
+            'exclude_from_search' => false,
+            'menu_icon' => 'dashicons-feedback',
+            'rewrite' => array('slug' => 'pontopreto', 'with_front' => false),
+        )
+    );
+  
+  }
+  add_action( 'init', 'create_pontopreto_podcast_post_types' );
+
+function get_pontopreto($remove = null, $limit = null) {
+
+    $arr = array(
+        'post_type' => 'pontopreto',
+        'post_status' => 'publish',
+        'posts_per_page' => -1,
+        'order' => 'ASC',
+    );
+
+    $query = new WP_Query($arr);
+
+    $dados = [];
+    while ($query->have_posts()) {
+        $query->the_post();
+        $post_id = get_the_ID();
+
+        $pontopreto_interna_banner = get_dados('pontopreto_interna_banner', $post_id);
+
+        $soma = 0;
+        if($remove !== $post_id) {
+            $dados[] = array(
+                'titulo' => get_the_title($post_id),
+                'thumb' => $pontopreto_interna_banner['capa'],
+                'link' => get_permalink($post_id),
+                'posicao' => $pontopreto_interna_banner['posicao'],
+                'autor' => $pontopreto_interna_banner['autor'],
+            );
+            if($limit === $soma) {
+                return $dados;
+            }
+            $soma = $soma + 1;
+            
+        }
+    }
+
+    return $dados;
+}
+
 ?>
+

@@ -1,0 +1,48 @@
+.pontopreto-resumo {
+  .container {
+    display: block;
+    margin: auto;
+    border-top: 1px solid rgba($color: #fff, $alpha: 0.4);
+    padding-top: 15px;
+    margin-bottom: 550px;
+    p {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      color: #6d6d6d;
+    }
+    h2 {
+      display: block;
+      font-size: 1.5em;
+      margin-block-start: 0.83em;
+      margin-block-end: 0.83em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+      color: #6d6d6d;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .pontopreto-resumo {
+    .container {
+      margin-bottom: 150px;
+      .alignleft {
+        width: 100%;
+        padding: 15px;
+      }
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        padding: 0 15px;
+      }
+    }
+  }
+}

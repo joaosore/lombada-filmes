@@ -18,10 +18,20 @@
     </div>
     <div class="logo">
       <a href="/">
+        <?php 
+          $word = "pontopreto";
+          $URL_ATUAL= "$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+          $img = '';
+          if(strpos($URL_ATUAL, $word) !== false){
+            $img = '/dist/imgs/logo-lombada-pride-branco.svg';
+          } else{
+            $img = '/dist/imgs/logo-lombada-preto.svg';
+          }
+        ?>
         <object
           id="logo-lombada-preto"
           type="image/svg+xml"
-          data="<?php echo get_template_directory_uri(); ?>/dist/imgs/logo-lombada-preto.svg"
+          data="<?php echo get_template_directory_uri() . $img; ?>"
           alt="Logo Lombada Filmes"
         ></object>
       </a>

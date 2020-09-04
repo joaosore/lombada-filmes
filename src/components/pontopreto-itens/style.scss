@@ -1,0 +1,65 @@
+.pontopreto-itens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 450px;
+    width: 100%;
+    padding: 15px;
+    a {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        filter: grayscale(100%);
+        transition: all 350ms ease-in-out;
+      }
+      &:before {
+        content: "";
+        transition: all 350ms ease-in-out;
+      }
+      &:hover {
+        img {
+          filter: grayscale(0);
+        }
+        .dados {
+          opacity: 1;
+        }
+      }
+      .dados {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        opacity: 0;
+        transition: all 350ms ease-in-out;
+        .rank {
+          -webkit-text-stroke: 1px #ffffff;
+          color: transparent;
+          font-size: 3.5em;
+          font-weight: 400;
+        }
+        .autor {
+          h4 {
+            font-size: 1.6em;
+            font-weight: 400;
+          }
+        }
+        .bt-play {
+          position: absolute;
+          bottom: 20px;
+          right: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .pontopreto-itens {
+  }
+}
