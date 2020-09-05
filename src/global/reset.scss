@@ -324,7 +324,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    // flex-direction: column;
     margin-bottom: 50px;
     hr {
       width: 100%;
@@ -344,6 +344,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 15px;
     a {
       position: relative;
       display: flex;
