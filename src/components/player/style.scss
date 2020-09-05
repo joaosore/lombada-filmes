@@ -45,8 +45,10 @@
 
 @media only screen and (max-width: 991px) {
   .video-play {
-    iframe {
-      height: auto;
+    div {
+      iframe {
+        height: auto;
+      }
     }
   }
 }
