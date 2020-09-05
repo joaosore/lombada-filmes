@@ -66,5 +66,16 @@
 
 @media only screen and (max-width: 991px) {
   .pontopreto-itens {
+    .items {
+      a {
+        img {
+          filter: grayscale(0);
+          transition: all 350ms ease-in-out;
+        }
+        .dados {
+          opacity: 1;
+        }
+      }
+    }
   }
 }
