@@ -324,6 +324,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 150px;
   .container {
     display: flex;
     align-items: center;
@@ -435,6 +436,7 @@ body {
   }
 
   .pontopreto-continue-escutando {
+    padding-bottom: 0;
     .container {
       .titile {
         h3 {
