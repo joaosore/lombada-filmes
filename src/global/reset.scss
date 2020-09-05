@@ -108,6 +108,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    .capa {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
     .dados {
       display: flex;
       flex-direction: column;
@@ -436,6 +440,7 @@ body {
         h3 {
           margin-top: 15px;
           margin-bottom: 15px;
+          padding: 0 15px;
         }
       }
       .item {

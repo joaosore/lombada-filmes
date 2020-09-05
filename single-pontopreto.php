@@ -36,7 +36,7 @@ get_header();
           </div>
         </div>
         <div class="box">
-          <img src="<?php echo $pontopretoInternaBanner['capa']['url']; ?>" alt="">
+          <img class="capa" src="<?php echo $pontopretoInternaBanner['capa']['url']; ?>" alt="">
         </div>
         <div class="player">
 
