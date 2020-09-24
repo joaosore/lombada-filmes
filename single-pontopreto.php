@@ -77,26 +77,28 @@ get_header();
           </div>
         </div>
       </div>
-      <div class="pontopreto-continue-escutando">
-        <div class="container">
+      <?php if(!empty(get_pontopreto(get_the_ID()))) { ?>
+        <div class="pontopreto-continue-escutando">
+          <div class="container">
 
-          <div class="titile">
-            <hr>
-            <h3>Continue escutando</h3> 
-          </div>
-          
-          <?php foreach(get_pontopreto(get_the_ID(), 3) as $item) { ?>
-            <div class="item">
-              <a href="<?php echo $item['link'] ?>">
-                <img src="<?php echo $item['thumb']['url'] ?>" alt="">
-                <div class="title">
-                  <span><?php echo $item['titulo'] ?></span>
-                </div>
-              </a>
+            <div class="titile">
+              <hr>
+              <h3>Continue escutando</h3> 
             </div>
-          <?php } ?>
+            
+            <?php foreach(get_pontopreto(get_the_ID(), 3) as $item) { ?>
+              <div class="item">
+                <a href="<?php echo $item['link'] ?>">
+                  <img src="<?php echo $item['thumb']['url'] ?>" alt="">
+                  <div class="title">
+                    <span><?php echo $item['titulo'] ?></span>
+                  </div>
+                </a>
+              </div>
+            <?php } ?>
+          </div>
         </div>
-      </div>
+      <?php } ?>
       <?php 
     }
   endwhile;

@@ -636,7 +636,7 @@ function get_trabalhos($remove = null, $limit = null) {
         'post_type' => 'trabalhos',
         'post_status' => 'publish',
         'posts_per_page' => -1,
-        'order' => 'ASC',
+        'order' => 'DESC',
     );
 
     $query = new WP_Query($arr);

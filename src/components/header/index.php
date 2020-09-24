@@ -6,7 +6,7 @@
           <a href="/#sobre-nos">SOBRE NÓS</a>
         </li>
         <li>
-          <a href="/#carousel">REPERTÓRIO</a>
+          <a href="/#carousel">TRAMPOS</a>
         </li>
         <li>
           <a href="/#pontopreto">PONTO PRETO PODCAST</a>

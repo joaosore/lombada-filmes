@@ -16,7 +16,7 @@
     }
     .box-texto {
       position: absolute;
-      max-width: 500px;
+      max-width: 550px;
       color: #fff;
       font-family: "Brasilero 2018 Free";
       background-image: url("../../imgs/fundo-texto.png");
@@ -28,6 +28,9 @@
       min-height: 225px;
       background-repeat: no-repeat;
       font-size: 2.625em;
+      p {
+        font-size: 1.3em;
+      }
     }
   }
   .arrow {
