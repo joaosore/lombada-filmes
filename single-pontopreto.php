@@ -77,7 +77,7 @@ get_header();
           </div>
         </div>
       </div>
-      <?php if(!empty(get_pontopreto(get_the_ID()))) { ?>
+      <?php if(!empty(get_pontopreto(get_the_ID(), 3))) { ?>
         <div class="pontopreto-continue-escutando">
           <div class="container">
 
