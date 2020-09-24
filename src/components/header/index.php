@@ -9,7 +9,7 @@
           <a href="/#carousel">REPERTÓRIO</a>
         </li>
         <li>
-          <a href="/#pontoreto">PONTORETO PODCAST</a>
+          <a href="/#pontopreto">PONTO PRETO PODCAST</a>
         </li>
         <li class="menu-mobile">
           <div class="img-menu-mobile"></div>
