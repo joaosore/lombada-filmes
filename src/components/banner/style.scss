@@ -25,6 +25,10 @@
     flex-direction: column;
     padding: 15px;
     z-index: 1;
+    .texto {
+      font-weight: bold;
+      letter-spacing: 4px;
+    }
   }
 }
 

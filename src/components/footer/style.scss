@@ -17,7 +17,7 @@
     background-image: url("../../imgs/footer-02.png");
     min-height: 301px;
     width: 100%;
-    background-repeat-y: no-repeat;
+    background-repeat: repeat-x;
     background-position: 62px 163px;
     z-index: 1;
     background-size: 497px;
@@ -56,10 +56,10 @@ footer {
     .footer-02 {
       min-height: 46px;
       width: 100%;
-      background-repeat: repeat-x;
       z-index: 1;
       background-size: 106px;
       background-position: 0 100%;
+      background-repeat: repeat-x;
     }
   }
   footer {
