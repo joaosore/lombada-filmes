@@ -59,7 +59,7 @@
           <a href="/#sobre-nos">SOBRE NÓS</a>
         </li>
         <li>
-          <a href="/#carousel">REPERTÓRIO</a>
+          <a href="/#carousel">TRAMPOS</a>
         </li>
         <li>
           <a href="/#pontoreto">PONTO PRETO PODCAST</a>
