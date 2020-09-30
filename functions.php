@@ -764,7 +764,7 @@ function get_pontopreto($remove = null, $limit = null) {
         if($remove !== $post_id) {
             $dados[] = array(
                 'titulo' => get_the_title($post_id),
-                'thumb' => $pontopreto_interna_banner['capa'],
+                'thumb' => $pontopreto_interna_banner['capa_externa'],
                 'link' => get_permalink($post_id),
                 'posicao' => $pontopreto_interna_banner['posicao'],
                 'autor' => $pontopreto_interna_banner['autor'],
