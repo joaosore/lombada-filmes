@@ -399,9 +399,13 @@ body {
 }
 
 @media only screen and (max-width: 1440px) {
-  #audioplayer {
-    padding: 0 15px;
-    max-width: 1440px;
+  .pontopreto-interna-banner {
+    .player {
+      #audioplayer {
+        padding: 0 15px;
+        max-width: 1440px;
+      }
+    }
   }
 }
 
