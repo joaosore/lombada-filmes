@@ -195,7 +195,7 @@ body {
       background: rgba(0, 255, 196, 0.82);
     }
     #audioplayer {
-      max-width: 1140px;
+      max-width: 1440px;
       width: 100%;
       display: flex;
       align-items: center;
@@ -395,6 +395,12 @@ body {
   .redes-social {
     margin-left: auto;
     padding-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  #audioplayer {
+    padding: 0 15px;
   }
 }
 
