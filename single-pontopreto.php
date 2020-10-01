@@ -32,7 +32,9 @@ get_header();
               <div class="titulo">entrevista com</div>
               <h3><?php echo $pontopretoInternaBanner['autor'] ?></h3>
             </div>
-          <?php echo $pontopretoInternaBanner['descricao'] ?>
+            <div class="descricao">
+              <?php echo $pontopretoInternaBanner['descricao'] ?>
+            </div>
           </div>
         </div>
         <div class="box">
