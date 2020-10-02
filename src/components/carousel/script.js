@@ -4,7 +4,7 @@ async function init_carousel() {
   $(".owl-carousel").owlCarousel({
     loop: false,
     margin: 10,
-    nav: false,
+    nav: true,
     dots: true,
     responsive: {
       0: {
