@@ -44,8 +44,8 @@
     align-items: center;
     justify-content: space-between;
     button {
-      font-size: 4em;
-      color: #ffb800;
+      font-size: 4em !important;
+      color: #ffb800 !important;
     }
   }
   .owl-dots {
