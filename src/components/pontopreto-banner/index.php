@@ -14,7 +14,7 @@
     <div class="links">
       <a href="<?php echo $pontopretoBanner['link_spotify']; ?>" class="ouvir">
         <img class="svg-icone" src="<?php echo get_template_directory_uri(); ?>/dist/imgs/spotify_icone.svg" alt="">
-        <div>
+        <div class="box-btn">
           <span>Ouvir no</span>
           <img class="svg-texto" src="<?php echo get_template_directory_uri(); ?>/dist/imgs/spotify_texto.svg" alt="">
         </div>
@@ -22,7 +22,7 @@
 
       <a href="<?php echo $pontopretoBanner['link_spotify']; ?>" class="ouvir">
         <img class="svg-icone" src="<?php echo get_template_directory_uri(); ?>/dist/imgs/google_podcast_icone.svg" alt="">
-        <div>
+        <div class="box-btn">
           <span>Ouvir no</span>
           <img class="svg-texto" src="<?php echo get_template_directory_uri(); ?>/dist/imgs/google_podcast_texto.svg" alt="">
         </div>
