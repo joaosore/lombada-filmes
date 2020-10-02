@@ -39,6 +39,15 @@
       top: 0;
     }
   }
+  .owl-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button {
+      font-size: 4em;
+      color: #ffb800;
+    }
+  }
   .owl-dots {
     display: flex;
     align-items: center;
@@ -53,15 +62,6 @@
       transition: all 350ms ease-in-out;
       &.active {
         background-color: #ffb800;
-      }
-    }
-    .owl-nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      button {
-        font-size: 4em;
-        color: #ffb800;
       }
     }
   }
