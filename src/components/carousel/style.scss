@@ -53,6 +53,7 @@
     align-items: center;
     justify-content: center;
     transform: translateY(-45px);
+    pointer-events: none;
     .owl-dot {
       width: 6px;
       height: 6px;
