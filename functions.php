@@ -754,6 +754,7 @@ function get_pontopreto($remove = null, $limit = null) {
     $query = new WP_Query($arr);
 
     $dados = [];
+
     while ($query->have_posts()) {
         $query->the_post();
         $post_id = get_the_ID();
@@ -762,12 +763,6 @@ function get_pontopreto($remove = null, $limit = null) {
 
         $soma = 0;
         if($remove !== $post_id) {
-
-            var_dump($post_id);
-            var_dump($remove);
-
-            var_dump($pontopreto_interna_banner['capa_externa']);
-
             $dados[] = array(
                 'titulo' => get_the_title($post_id),
                 'thumb' => $pontopreto_interna_banner['capa_externa'],
@@ -779,7 +774,6 @@ function get_pontopreto($remove = null, $limit = null) {
                 return $dados;
             }
             $soma = $soma + 1;
-            
         }
     }
 
