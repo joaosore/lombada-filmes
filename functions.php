@@ -760,6 +760,8 @@ function get_pontopreto($remove = null, $limit = null) {
 
         $pontopreto_interna_banner = get_dados('pontopreto_interna_banner', $post_id);
 
+        var_dump($post_id);
+
         $soma = 0;
         if($remove !== $post_id) {
             $dados[] = array(
