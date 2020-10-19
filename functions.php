@@ -762,7 +762,7 @@ function get_pontopreto($remove = null, $limit = null) {
         $pontopreto_interna_banner = get_dados('pontopreto_interna_banner', $post_id);
 
         $soma = 0;
-        if($remove !== $post_id) {
+        // if($remove !== $post_id) {
             $dados[] = array(
                 'titulo' => get_the_title($post_id),
                 'thumb' => $pontopreto_interna_banner['capa_externa'],
@@ -770,11 +770,11 @@ function get_pontopreto($remove = null, $limit = null) {
                 'posicao' => $pontopreto_interna_banner['posicao'],
                 'autor' => $pontopreto_interna_banner['autor'],
             );
-            if($limit === $soma) {
-                return $dados;
-            }
-            $soma = $soma + 1;
-        }
+            // if($limit === $soma) {
+            //     return $dados;
+            // }
+            // $soma = $soma + 1;
+        // }
     }
 
     return $dados;
