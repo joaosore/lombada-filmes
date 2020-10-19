@@ -353,6 +353,12 @@ body {
   }
   .titile {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      text-align: center;
+    }
   }
   .item {
     display: flex;
